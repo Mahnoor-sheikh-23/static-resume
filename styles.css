@@ -1,0 +1,209 @@
+ body {
+     font-family: Arial, sans-serif;
+     background-color: #f5f0e6;
+     display: flex;
+     justify-content: center;
+     padding: 20px;
+     color: black;
+ }
+
+ .resume-builder {
+     display: flex;
+
+     max-width: 1200px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     border-radius: 8px;
+     overflow: hidden;
+     background-color: white;
+ }
+
+ .sidebar {
+     background-color: rgb(224, 220, 220);
+     color: #fff;
+     width: 250px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+ }
+
+ .image-div {
+     border-bottom-right-radius: 140px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: left;
+     width: 95%;
+     border-bottom-left-radius: 140px;
+     background-color: rgb(72, 67, 73);
+
+ }
+
+ .img {
+     width: 200px;
+     height: 200px;
+     border-radius: 50%;
+     margin-left: 2px;
+     margin-bottom: 8px;
+     border: 2px solid black;
+ }
+
+ .sidebar h2 {
+     font-size: 18px;
+     margin-bottom: 15px;
+ }
+
+ .sidebar ul {
+     list-style: none;
+     padding: 0;
+     width: 100%;
+ }
+
+ .sidebar ul h2 {
+     text-align: center;
+     color: black;
+ }
+
+ .sidebar ul li {
+     margin: 10px 0;
+     cursor: pointer;
+     color: black;
+     text-align: center;
+     font-size: 17px;
+ }
+ .sidebar ul li a{
+    text-decoration: none;
+    color: black;
+ }
+
+ .second-div {
+     border-top-left-radius: 140px;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     text-align: left;
+     width: 95%;
+     border-top-right-radius: 140px;
+     background-color: rgb(72, 67, 73);
+ }
+
+ .last-one{
+    padding-bottom:160px ;
+ }
+ .second-divh2 {
+     padding-top: 19px;
+
+ }
+
+ .second-divh3 {
+     padding-left: 16px;
+ }
+
+
+ .sidebar ul li:hover {
+     text-decoration: underline;
+ }
+
+.skills-ul{
+    display: block;
+}
+ .resume-content {
+     flex: 1;
+     padding: 30px;
+     background-color: #fff;
+     width: 500px;
+ }
+ .ul-of-section-skils{
+    list-style: none;
+    font-size: 20px;
+}
+ button {
+   background-color:rgb(72, 67, 73); ;
+     color: #fff;
+     border: none;
+     padding: 10px 15px;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-bottom: 20px;
+ }
+
+ button:hover {
+     background-color: #5d4037;
+ }
+ .job{
+    margin-bottom: 60px;
+    margin-top: 40px;
+ }
+
+ .language{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+
+.hobbies-li{
+    list-style: none;
+}
+
+.gh-33{
+    text-decoration: underline;
+}
+
+ /* Base styles remain unchanged; add only the following media query for screens < 577px */
+@media (max-width: 576px) {
+    /* Ensure flex layout stacks items vertically */
+    .resume-builder {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        padding: 10px; /* Adds padding around content */
+    }
+
+    /* Sidebar takes full width on smaller screens */
+    .sidebar {
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    /* Adjust image size for smaller screens */
+    .img {
+        width: 120px;
+        height: 120px;
+    }
+
+    /* Reduce font sizes for improved readability on small screens */
+    .sidebar h2,
+    .sidebar ul li {
+        font-size: 16px;
+    }
+
+    /* Adjust content width to full for small screens */
+    .resume-content {
+        width: 100%;
+        padding: 20px;
+        box-sizing: border-box; /* Ensures padding doesn't affect layout */
+    }
+
+    /* Additional padding for smaller buttons */
+    button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    /* Adjust list items in skills section */
+    .ul-of-section-skils {
+        font-size: 16px;
+    }
+
+    /* Margin adjustments for spacing consistency */
+    .job {
+        margin-bottom: 40px;
+        margin-top: 20px;
+    }
+    .language{
+        flex-direction: column;
+    }
+}
